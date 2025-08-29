@@ -5,8 +5,8 @@ A full-stack To-Do application with a React frontend and a Spring Boot backend, 
 ### Click on the screenshot below to start the video!
 [![Demo Video](assets/todo.png)](https://youtu.be/Q7ab0U0HOio)
 ## Some other pictures:
-![Alt text](assets/todo-edit.png)
-![Alt text](assets/todo-edit2.png)
+![edit-1](assets/todo-edit.png)
+![edit-2](assets/todo-edit2.png)
 
 ---
 
