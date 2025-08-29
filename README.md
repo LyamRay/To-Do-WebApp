@@ -22,7 +22,7 @@ A full-stack To-Do application with a React frontend and a Spring Boot backend, 
 
 ## Project Structure
 
-demo/
+todo/
 - todo-frontend/       React frontend
     - public/
     - src/
