@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000") //using ngrok you can create a free link so that users can acces it not only from localhost, place that also here!
 public class TaskController {
 
     private final TaskService service = new TaskService();
