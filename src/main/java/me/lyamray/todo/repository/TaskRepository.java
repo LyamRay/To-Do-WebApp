@@ -22,7 +22,6 @@ public class TaskRepository {
         if (task.getId() == null) {
             db.add("tasks", values);
 
-            // Get the last inserted id
             List<Map<String, Object>> lastRow = db.get("tasks", "rowid = (SELECT MAX(rowid) FROM tasks)");
             if (!lastRow.isEmpty()) {
                 task.setId(((Number) lastRow.get(0).get("id")).longValue());
