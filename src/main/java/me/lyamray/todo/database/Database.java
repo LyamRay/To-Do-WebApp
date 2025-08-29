@@ -1,5 +1,7 @@
 package me.lyamray.todo.database;
 
+import lombok.Getter;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -8,15 +10,9 @@ import java.util.*;
 
 public class Database {
 
+    @Getter
     private static Database instance;
     private Connection connection;
-
-    public static Database getInstance() {
-        if (instance == null) {
-            instance = new Database();
-        }
-        return instance;
-    }
 
     private Database() {
         setupDatabase();
