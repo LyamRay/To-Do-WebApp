@@ -1,0 +1,203 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(
+    160deg,
+    #fff1e0 0%,
+    #ffc87c 35%,
+    #ff9e3c 65%,
+    #e65100 100%
+  );
+
+  color: #4e2a00;
+  min-height: 100vh;
+
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.02) 20px,
+    transparent 20px,
+    transparent 40px
+  );
+}
+
+.app {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 25px;
+  text-align: center;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-btn,
+.delete-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn {
+  background: #ffb300;
+  color: white;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background: #ffa000;
+}
+
+.delete-btn {
+  background: #f28b82;
+  color: white;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background: #e57373;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-wrapper {
+  margin-bottom: 14px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffaf2;
+  padding: 14px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.task:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.task .title {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+}
+
+.state-text {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.9em;
+}
+
+.state-done {
+  background-color: #56c596; /* soft green */
+}
+
+.state-working {
+  background-color: #4dd0e1; /* aqua/blue */
+}
+
+.state-cancelled {
+  background-color: #ff5252; /* soft red */
+}
+
+.state-not-started {
+  background-color: #78909c; /* muted gray */
+}
+
+.state-text:hover {
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.edit {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.task-hover {
+  margin-top: 8px;
+  background: #fff8e1;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+  text-align: left;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
