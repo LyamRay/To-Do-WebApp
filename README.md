@@ -1,16 +1,9 @@
 # To-Do WebApp
 
-https://raw.githubusercontent.com/LyamRay/To-Do-WebApp/main/assets/2025-08-29%2003-37-27.mp4
-
-<!-- Video Demo -->
-<video controls width="640" style="max-width:100%; border-radius:8px;">
-  <source src="https://raw.githubusercontent.com/LyamRay/To-Do-WebApp/main/assets/2025-08-29%2003-37-27.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
 A full-stack To-Do application with a React frontend and a Spring Boot backend, using a custom SQLite-based database system.
 
+### Click on the screenshot below to start the video!
+[![Demo Video](assets/todo.png)](https://raw.githubusercontent.com/LyamRay/To-Do-WebApp/main/assets/2025-08-29%2003-37-27.mp4)
 ---
 
 ## Features
